@@ -24,8 +24,7 @@ class MyApp extends StatelessWidget {
           body: Consumer<MainModel>(builder: (context, model, child) {
             final todoList = model.todoList;
             return ListView(
-              children: todoList
-                  .map(
+              children: todoList.map(
                     (todo) => ListTile(
                         title: Text(todo.title),
                     ),
